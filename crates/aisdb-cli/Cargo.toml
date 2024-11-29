@@ -1,0 +1,10 @@
+[package]
+name = "aisdb-cli"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+aisdb-s3 = { path = "../aisdb-s3" }
+num_cpus.workspace = true
+rusoto_core.workspace = true
+tokio.workspace = true 

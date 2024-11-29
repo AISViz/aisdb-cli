@@ -1,0 +1,24 @@
+[workspace]
+members = [
+    "crates/aisdb-cli",     # CLI 应用
+    "crates/aisdb-s3",      # S3 下载和处理功能
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+base64 = "0.21"
+futures = "0.3"
+md-5 = "0.10"
+num_cpus = "1.0"
+rayon = "1.7"
+rusoto_core = "0.48"
+rusoto_credential = "0.48"
+rusoto_s3 = "0.48"
+tempfile = "3.8"
+tokio = { version = "1.0", features = ["full", "io-util"] }
+zip = "0.6"
